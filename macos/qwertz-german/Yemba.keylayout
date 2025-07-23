@@ -1,411 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<keyboard group="126" id="5679" name="Yemba (QWERTZ German)" maxout="1">
+<keyboard group="126" id="15000" name="Yemba QWERTZ" maxout="1">
     <layouts>
-        <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
-        <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
-        <layout first="21" last="23" mapSet="JIS" modifiers="Modifiers"/>
+        <layout first="0" last="127" mapSet="ANSI" modifiers="Modifiers"/>
     </layouts>
-    
     <modifierMap id="Modifiers" defaultIndex="0">
         <keyMapSelect mapIndex="0">
             <modifier keys=""/>
         </keyMapSelect>
         <keyMapSelect mapIndex="1">
-            <modifier keys="shift"/>
+            <modifier keys="anyShift caps?"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="2">
-            <modifier keys="option"/>
+            <modifier keys="anyOption"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="3">
-            <modifier keys="option? shift caps?"/>
+            <modifier keys="anyShift anyOption caps?"/>
         </keyMapSelect>
         <keyMapSelect mapIndex="4">
             <modifier keys="caps"/>
         </keyMapSelect>
-        <keyMapSelect mapIndex="5">
-            <modifier keys="shift caps"/>
-        </keyMapSelect>
     </modifierMap>
-    
     <keyMapSet id="ANSI">
-        <!-- Carte des touches normale (QWERTZ German) -->
+        <!-- Base layer (no modifiers) -->
         <keyMap index="0">
-            <!-- Chiffres avec caractères spéciaux allemands -->
-            <key code="18" output="1"/>
-            <key code="19" output="2"/>
-            <key code="20" output="3"/>
-            <key code="21" output="4"/>
-            <key code="23" output="5"/>
-            <key code="22" output="6"/>
-            <key code="26" output="7"/>
-            <key code="28" output="8"/>
-            <key code="25" output="9"/>
-            <key code="29" output="0"/>
-            <key code="27" output="ß"/>     <!-- ß key -->
-            <key code="24" output="´"/>     <!-- acute accent key -->
-            
-            <!-- Première rangée QWERTZ (Z et Y inversés par rapport à QWERTY) -->
-            <key code="12" output="q"/>
-            <key code="13" output="w"/>
-            <key code="14" output="e"/>
-            <key code="15" output="r"/>
-            <key code="17" output="t"/>
-            <key code="16" output="z"/>     <!-- Z ici au lieu de Y -->
-            <key code="32" output="u"/>
-            <key code="34" output="i"/>
-            <key code="31" output="o"/>
-            <key code="35" output="p"/>
-            <key code="33" output="ü"/>     <!-- ü key -->
-            <key code="30" output="+"/>     <!-- + key -->
-            
-            <!-- Deuxième rangée ASDF -->
             <key code="0" output="a"/>
             <key code="1" output="s"/>
             <key code="2" output="d"/>
             <key code="3" output="f"/>
-            <key code="5" output="g"/>
             <key code="4" output="h"/>
-            <key code="38" output="j"/>
-            <key code="40" output="k"/>
-            <key code="37" output="l"/>
-            <key code="41" output="ö"/>     <!-- ö key -->
-            <key code="39" output="ä"/>     <!-- ä key -->
-            <key code="42" output="#"/>     <!-- # key -->
-            
-            <!-- Troisième rangée YXCV (Y ici au lieu de Z) -->
-            <key code="10" output="<"/>     <!-- < key pour German layout -->
-            <key code="6" output="y"/>      <!-- Y ici au lieu de Z -->
+            <key code="5" output="g"/>
+            <key code="6" output="y"/>
             <key code="7" output="x"/>
             <key code="8" output="c"/>
             <key code="9" output="v"/>
+            <key code="10" output="^"/>
             <key code="11" output="b"/>
+            <key code="12" output="q"/>
+            <key code="13" output="w"/>
+            <key code="14" output="e"/>
+            <key code="15" output="r"/>
+            <key code="16" output="z"/>
+            <key code="17" output="t"/>
+            <key code="18" output="1"/>
+            <key code="19" output="2"/>
+            <key code="20" output="3"/>
+            <key code="21" output="4"/>
+            <key code="22" output="6"/>
+            <key code="23" output="5"/>
+            <key code="24" output="="/>
+            <key code="25" output="9"/>
+            <key code="26" output="7"/>
+            <key code="27" output="-"/>
+            <key code="28" output="8"/>
+            <key code="29" output="0"/>
+            <key code="30" output="]"/>
+            <key code="31" output="o"/>
+            <key code="32" output="u"/>
+            <key code="33" output="["/>
+            <key code="34" output="i"/>
+            <key code="35" output="p"/>
+            <key code="36" output="&#x000D;"/>
+            <key code="37" output="l"/>
+            <key code="38" output="j"/>
+            <key code="39" output="'"/>
+            <key code="40" output="k"/>
+            <key code="41" output=";"/>
+            <key code="42" output="\"/>
+            <key code="43" output=","/>
+            <key code="44" output="/"/>
             <key code="45" output="n"/>
             <key code="46" output="m"/>
-            <key code="43" output=","/>
             <key code="47" output="."/>
-            <key code="44" output="-"/>
-            
-            <!-- Autres touches -->
-            <key code="49" output=" "/>
-            <key code="36" output="&#x000D;"/>
             <key code="48" output="&#x0009;"/>
+            <key code="49" output=" "/>
+            <key code="50" output="`"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
+            <key code="65" output="."/>
+            <key code="67" output="*"/>
+            <key code="69" output="+"/>
+            <key code="71" output="&#x001B;"/>
+            <key code="75" output="/"/>
+            <key code="76" output="&#x0003;"/>
+            <key code="78" output="-"/>
+            <key code="81" output="="/>
+            <key code="82" output="0"/>
+            <key code="83" output="1"/>
+            <key code="84" output="2"/>
+            <key code="85" output="3"/>
+            <key code="86" output="4"/>
+            <key code="87" output="5"/>
+            <key code="88" output="6"/>
+            <key code="89" output="7"/>
+            <key code="91" output="8"/>
+            <key code="92" output="9"/>
+            <key code="96" output="&#x0010;"/>
+            <key code="97" output="&#x0010;"/>
+            <key code="98" output="&#x0010;"/>
+            <key code="99" output="&#x0010;"/>
+            <key code="100" output="&#x0010;"/>
+            <key code="101" output="&#x0010;"/>
+            <key code="103" output="&#x0010;"/>
+            <key code="105" output="&#x0010;"/>
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <key code="109" output="&#x0010;"/>
+            <key code="111" output="&#x0010;"/>
+            <key code="113" output="&#x0010;"/>
+            <key code="114" output="&#x0005;"/>
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="118" output="&#x0010;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="120" output="&#x0010;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="122" output="&#x0010;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
         </keyMap>
         
-        <!-- Carte des touches avec Shift (QWERTZ German) -->
+        <!-- Shift layer -->
         <keyMap index="1">
-            <key code="18" output="!"/>
-            <key code="19" output="&#x0022;"/>  <!-- " quotation mark -->
-            <key code="20" output="§"/>
-            <key code="21" output="$"/>
-            <key code="23" output="%"/>
-            <key code="22" output="&#x0026;"/>  <!-- & ampersand -->
-            <key code="26" output="/"/>
-            <key code="28" output="("/>
-            <key code="25" output=")"/>
-            <key code="29" output="="/>
-            <key code="27" output="?"/>
-            <key code="24" output="`"/>     <!-- grave accent -->
-            
-            <key code="12" output="Q"/>
-            <key code="13" output="W"/>
-            <key code="14" output="E"/>
-            <key code="15" output="R"/>
-            <key code="17" output="T"/>
-            <key code="16" output="Z"/>     <!-- Z capital -->
-            <key code="32" output="U"/>
-            <key code="34" output="I"/>
-            <key code="31" output="O"/>
-            <key code="35" output="P"/>
-            <key code="33" output="Ü"/>
-            <key code="30" output="*"/>
-            
             <key code="0" output="A"/>
             <key code="1" output="S"/>
             <key code="2" output="D"/>
             <key code="3" output="F"/>
-            <key code="5" output="G"/>
             <key code="4" output="H"/>
-            <key code="38" output="J"/>
-            <key code="40" output="K"/>
-            <key code="37" output="L"/>
-            <key code="41" output="Ö"/>
-            <key code="39" output="Ä"/>
-            <key code="42" output="'"/>
-            
-            <key code="10" output=">"/>
-            <key code="6" output="Y"/>      <!-- Y capital -->
+            <key code="5" output="G"/>
+            <key code="6" output="Y"/>
             <key code="7" output="X"/>
             <key code="8" output="C"/>
             <key code="9" output="V"/>
+            <key code="10" output="°"/>
             <key code="11" output="B"/>
+            <key code="12" output="Q"/>
+            <key code="13" output="W"/>
+            <key code="14" output="E"/>
+            <key code="15" output="R"/>
+            <key code="16" output="Z"/>
+            <key code="17" output="T"/>
+            <key code="18" output="!"/>
+            <key code="19" output="@"/>
+            <key code="20" output="#"/>
+            <key code="21" output="$"/>
+            <key code="22" output="&amp;"/>
+            <key code="23" output="%"/>
+            <key code="24" output="+"/>
+            <key code="25" output="("/>
+            <key code="26" output="/"/>
+            <key code="27" output="_"/>
+            <key code="28" output="*"/>
+            <key code="29" output=")"/>
+            <key code="30" output="}"/>
+            <key code="31" output="O"/>
+            <key code="32" output="U"/>
+            <key code="33" output="{"/>
+            <key code="34" output="I"/>
+            <key code="35" output="P"/>
+            <key code="36" output="&#x000D;"/>
+            <key code="37" output="L"/>
+            <key code="38" output="J"/>
+            <key code="39" output="&#x0022;"/>
+            <key code="40" output="K"/>
+            <key code="41" output=":"/>
+            <key code="42" output="|"/>
+            <key code="43" output="&lt;"/>
+            <key code="44" output="?"/>
             <key code="45" output="N"/>
             <key code="46" output="M"/>
-            <key code="43" output=";"/>
-            <key code="47" output=":"/>
-            <key code="44" output="_"/>
-            
+            <key code="47" output="&gt;"/>
+            <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
-            <key code="36" output="&#x000D;"/>
-            <key code="48" output="&#x0009;"/>
+            <key code="50" output="~"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
         </keyMap>
         
-        <!-- Carte des touches avec Option (caractères spéciaux Yemba) -->
+        <!-- Option layer (Alt/Option key) - Yemba special characters -->
         <keyMap index="2">
-            <!-- Chiffres avec voyelles ouvertes -->
-            <key code="18" output="ɛ"/>        <!-- Option + 1 = ɛ -->
-            <key code="19" output="ɛ̀"/>        <!-- Option + 2 = ɛ̀ -->
-            <key code="20" output="ɛ́"/>        <!-- Option + 3 = ɛ́ -->
-            <key code="21" output="ɛ̂"/>        <!-- Option + 4 = ɛ̂ -->
-            <key code="23" output="ɛ̄"/>        <!-- Option + 5 = ɛ̄ -->
-            <key code="22" output="ɔ"/>        <!-- Option + 6 = ɔ -->
-            <key code="26" output="ɔ̀"/>        <!-- Option + 7 = ɔ̀ -->
-            <key code="28" output="ɔ́"/>        <!-- Option + 8 = ɔ́ -->
-            <key code="25" output="ɔ̂"/>        <!-- Option + 9 = ɔ̂ -->
-            <key code="29" output="ɔ̄"/>        <!-- Option + 0 = ɔ̄ -->
-            <key code="27" output="~"/>        <!-- Option + ß = ~ -->
-            <key code="24" output="¨"/>        <!-- Option + ´ = ¨ -->
-            
-            <!-- Première rangée QWERTZ avec voyelles centrales -->
-            <key code="12" output="ʉ"/>        <!-- Option + Q = ʉ -->
-            <key code="13" output="ʉ̀"/>        <!-- Option + W = ʉ̀ -->
-            <key code="14" output="ʉ́"/>        <!-- Option + E = ʉ́ -->
-            <key code="15" output="ʉ̂"/>        <!-- Option + R = ʉ̂ -->
-            <key code="17" output="ʉ̄"/>        <!-- Option + T = ʉ̄ -->
-            <key code="16" output="ɨ"/>        <!-- Option + Z = ɨ (vowel central) -->
-            <key code="32" output="ù"/>        <!-- Option + U = ù -->
-            <key code="34" output="ì"/>        <!-- Option + I = ì -->
-            <key code="31" output="ò"/>        <!-- Option + O = ò -->
-            <key code="35" output="p̀"/>        <!-- Option + P = p̀ -->
-            <key code="33" output="ū"/>        <!-- Option + Ü = ū -->
-            <key code="30" output="±"/>        <!-- Option + + = ± -->
-            
-            <!-- Deuxième rangée avec voyelles tonales -->
-            <key code="0" output="à"/>         <!-- Option + A = à -->
-            <key code="1" output="ə"/>         <!-- Option + S = ə -->
-            <key code="2" output="ə̀"/>         <!-- Option + D = ə̀ -->
-            <key code="3" output="ə́"/>         <!-- Option + F = ə́ -->
-            <key code="5" output="ə̂"/>         <!-- Option + G = ə̂ -->
-            <key code="4" output="ə̄"/>         <!-- Option + H = ə̄ -->
-            <key code="38" output="j́"/>        <!-- Option + J = j́ -->
-            <key code="40" output="k̀"/>        <!-- Option + K = k̀ -->
-            <key code="37" output="l̀"/>        <!-- Option + L = l̀ -->
-            <key code="41" output="ō"/>        <!-- Option + Ö = ō -->
-            <key code="39" output="ā"/>        <!-- Option + Ä = ā -->
-            <key code="42" output="£"/>        <!-- Option + # = £ -->
-            
-            <!-- Troisième rangée avec Y/Z inversés -->
-            <key code="10" output="≤"/>        <!-- Option + < = ≤ -->
-            <key code="6" output="ỳ"/>         <!-- Option + Y = ỳ -->
-            <key code="7" output="ɨ̀"/>         <!-- Option + X = ɨ̀ -->
-            <key code="8" output="ɨ́"/>         <!-- Option + C = ɨ́ -->
-            <key code="9" output="ɨ̂"/>         <!-- Option + V = ɨ̂ -->
-            <key code="11" output="ɨ̄"/>        <!-- Option + B = ɨ̄ -->
-            <key code="45" output="ɲ"/>        <!-- Option + N = ɲ -->
-            <key code="46" output="ŋ"/>        <!-- Option + M = ŋ -->
-            <key code="43" output="«"/>        <!-- Option + , = « -->
-            <key code="47" output="»"/>        <!-- Option + . = » -->
-            <key code="44" output="–"/>        <!-- Option + - = – -->
-            
-            <key code="49" output="&#x00A0;"/>  <!-- Espace insécable -->
-            <key code="36" output="&#x000D;"/>
-            <key code="48" output="&#x0009;"/>
-            <key code="51" output="&#x0008;"/>
-            <key code="53" output="&#x001B;"/>
-        </keyMap>
-        
-        <!-- Carte des touches avec Option + Shift -->
-        <keyMap index="3">
-            <key code="18" output="Ɛ"/>        <!-- Option + Shift + 1 = Ɛ -->
-            <key code="19" output="Ɛ̀"/>        <!-- Option + Shift + 2 = Ɛ̀ -->
-            <key code="20" output="Ɛ́"/>        <!-- Option + Shift + 3 = Ɛ́ -->
-            <key code="21" output="Ɛ̂"/>        <!-- Option + Shift + 4 = Ɛ̂ -->
-            <key code="23" output="Ɛ̄"/>        <!-- Option + Shift + 5 = Ɛ̄ -->
-            <key code="22" output="Ɔ"/>        <!-- Option + Shift + 6 = Ɔ -->
-            <key code="26" output="Ɔ̀"/>        <!-- Option + Shift + 7 = Ɔ̀ -->
-            <key code="28" output="Ɔ́"/>        <!-- Option + Shift + 8 = Ɔ́ -->
-            <key code="25" output="Ɔ̂"/>        <!-- Option + Shift + 9 = Ɔ̂ -->
-            <key code="29" output="Ɔ̄"/>        <!-- Option + Shift + 0 = Ɔ̄ -->
-            <key code="27" output="˜"/>        <!-- Option + Shift + ß = ˜ -->
-            <key code="24" output="¸"/>        <!-- Option + Shift + ´ = ¸ -->
-            
-            <key code="12" output="ʉ"/>        <!-- Option + Shift + Q = ʉ (same as lowercase) -->
-            <key code="13" output="ʉ̀"/>        <!-- Option + Shift + W = ʉ̀ -->
-            <key code="14" output="É"/>        <!-- Option + Shift + E = É -->
-            <key code="15" output="ʉ̂"/>        <!-- Option + Shift + R = ʉ̂ -->
-            <key code="17" output="ʉ̄"/>        <!-- Option + Shift + T = ʉ̄ -->
-            <key code="16" output="Ɨ"/>        <!-- Option + Shift + Z = Ɨ -->
-            <key code="32" output="Ú"/>        <!-- Option + Shift + U = Ú -->
-            <key code="34" output="Í"/>        <!-- Option + Shift + I = Í -->
-            <key code="31" output="Ó"/>        <!-- Option + Shift + O = Ó -->
-            <key code="35" output="Ṕ"/>        <!-- Option + Shift + P = Ṕ -->
-            <key code="33" output="Ū"/>        <!-- Option + Shift + Ü = Ū -->
-            <key code="30" output="∓"/>        <!-- Option + Shift + + = ∓ -->
-            
-            <key code="0" output="Á"/>         <!-- Option + Shift + A = Á -->
-            <key code="1" output="Ə"/>         <!-- Option + Shift + S = Ə -->
-            <key code="2" output="Ə̀"/>         <!-- Option + Shift + D = Ə̀ -->
-            <key code="3" output="Ə́"/>         <!-- Option + Shift + F = Ə́ -->
-            <key code="5" output="Ə̂"/>         <!-- Option + Shift + G = Ə̂ -->
-            <key code="4" output="Ə̄"/>         <!-- Option + Shift + H = Ə̄ -->
-            <key code="38" output="J́"/>        <!-- Option + Shift + J = J́ -->
-            <key code="40" output="K̀"/>        <!-- Option + Shift + K = K̀ -->
-            <key code="37" output="L̀"/>        <!-- Option + Shift + L = L̀ -->
-            <key code="41" output="Ō"/>        <!-- Option + Shift + Ö = Ō -->
-            <key code="39" output="Ā"/>        <!-- Option + Shift + Ä = Ā -->
-            <key code="42" output="¥"/>        <!-- Option + Shift + # = ¥ -->
-            
-            <key code="10" output="≥"/>        <!-- Option + Shift + < = ≥ -->
-            <key code="6" output="Ỳ"/>         <!-- Option + Shift + Y = Ỳ -->
-            <key code="7" output="Ɨ̀"/>         <!-- Option + Shift + X = Ɨ̀ -->
-            <key code="8" output="Ɨ́"/>         <!-- Option + Shift + C = Ɨ́ -->
-            <key code="9" output="Ɨ̂"/>         <!-- Option + Shift + V = Ɨ̂ -->
-            <key code="11" output="Ɨ̄"/>        <!-- Option + Shift + B = Ɨ̄ -->
-            <key code="45" output="Ɲ"/>        <!-- Option + Shift + N = Ɲ -->
-            <key code="46" output="Ŋ"/>        <!-- Option + Shift + M = Ŋ -->
-            <key code="43" output="‹"/>        <!-- Option + Shift + , = ‹ -->
-            <key code="47" output="›"/>        <!-- Option + Shift + . = › -->
-            <key code="44" output="—"/>        <!-- Option + Shift + - = — -->
-            
-            <key code="49" output="&#x00A0;"/>
-            <key code="36" output="&#x000D;"/>
-            <key code="48" output="&#x0009;"/>
-            <key code="51" output="&#x0008;"/>
-            <key code="53" output="&#x001B;"/>
-        </keyMap>
-        
-        <!-- Carte des touches avec Caps Lock -->
-        <keyMap index="4">
+            <key code="0" output="ã"/>          <!-- Option+a = ã (nasal a) -->
+            <key code="1" output="ś"/>          <!-- Option+s = ś -->
+            <key code="2" output="ɗ"/>          <!-- Option+d = ɗ -->
+            <key code="3" output="f́"/>          <!-- Option+f = f́ -->
+            <key code="4" output="h"/>
+            <key code="5" output="ɣ"/>          <!-- Option+g = ɣ -->
+            <key code="6" output="ỹ"/>          <!-- Option+y = ỹ (nasal y) -->
+            <key code="7" output="x"/>
+            <key code="8" output="c"/>
+            <key code="9" output="v"/>
+            <key code="10" output="^"/>
+            <key code="11" output="ɓ"/>         <!-- Option+b = ɓ -->
+            <key code="12" output="q"/>
+            <key code="13" output="w̃"/>         <!-- Option+w = w̃ (nasal w) -->
+            <key code="14" output="ɛ"/>         <!-- Option+e = ɛ (open e) -->
+            <key code="15" output="r"/>
+            <key code="16" output="z"/>
+            <key code="17" output="t"/>
             <key code="18" output="1"/>
             <key code="19" output="2"/>
             <key code="20" output="3"/>
             <key code="21" output="4"/>
-            <key code="23" output="5"/>
             <key code="22" output="6"/>
-            <key code="26" output="7"/>
-            <key code="28" output="8"/>
+            <key code="23" output="5"/>
+            <key code="24" output="="/>
             <key code="25" output="9"/>
+            <key code="26" output="7"/>
+            <key code="27" output="-"/>
+            <key code="28" output="8"/>
             <key code="29" output="0"/>
-            <key code="27" output="ß"/>
-            <key code="24" output="´"/>
-            
-            <key code="12" output="Q"/>
-            <key code="13" output="W"/>
-            <key code="14" output="E"/>
-            <key code="15" output="R"/>
-            <key code="17" output="T"/>
-            <key code="16" output="Z"/>     <!-- Z capital with Caps -->
-            <key code="32" output="U"/>
-            <key code="34" output="I"/>
-            <key code="31" output="O"/>
-            <key code="35" output="P"/>
-            <key code="33" output="ü"/>
-            <key code="30" output="+"/>
-            
-            <key code="0" output="A"/>
-            <key code="1" output="S"/>
-            <key code="2" output="D"/>
-            <key code="3" output="F"/>
-            <key code="5" output="G"/>
-            <key code="4" output="H"/>
-            <key code="38" output="J"/>
-            <key code="40" output="K"/>
-            <key code="37" output="L"/>
-            <key code="41" output="ö"/>
-            <key code="39" output="ä"/>
-            <key code="42" output="#"/>
-            
-            <key code="10" output="<"/>
-            <key code="6" output="Y"/>      <!-- Y capital with Caps -->
-            <key code="7" output="X"/>
-            <key code="8" output="C"/>
-            <key code="9" output="V"/>
-            <key code="11" output="B"/>
-            <key code="45" output="N"/>
-            <key code="46" output="M"/>
-            <key code="43" output=","/>
-            <key code="47" output="."/>
-            <key code="44" output="-"/>
-            
-            <key code="49" output=" "/>
+            <key code="30" output="]"/>
+            <key code="31" output="ɔ"/>         <!-- Option+o = ɔ (open o) -->
+            <key code="32" output="ũ"/>         <!-- Option+u = ũ (nasal u) -->
+            <key code="33" output="["/>
+            <key code="34" output="ĩ"/>         <!-- Option+i = ĩ (nasal i) -->
+            <key code="35" output="p"/>
             <key code="36" output="&#x000D;"/>
+            <key code="37" output="l"/>
+            <key code="38" output="j"/>
+            <key code="39" output="ʼ"/>         <!-- Option+' = ʼ (apostrophe modificatrice) -->
+            <key code="40" output="k"/>
+            <key code="41" output=";"/>
+            <key code="42" output="\"/>
+            <key code="43" output=","/>
+            <key code="44" output="/"/>
+            <key code="45" output="ɲ"/>         <!-- Option+n = ɲ (ny palatalisé) -->
+            <key code="46" output="m̃"/>         <!-- Option+m = m̃ (nasal m) -->
+            <key code="47" output="."/>
             <key code="48" output="&#x0009;"/>
+            <key code="49" output=" "/>
+            <key code="50" output="ŋ"/>         <!-- Option+` = ŋ (ng) -->
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
         </keyMap>
         
-        <!-- Carte des touches avec Caps Lock + Shift -->
-        <keyMap index="5">
+        <!-- Option+Shift layer - Yemba special characters uppercase and additional -->
+        <keyMap index="3">
+            <key code="0" output="Ã"/>          <!-- Option+Shift+a = Ã -->
+            <key code="1" output="Ś"/>          <!-- Option+Shift+s = Ś -->
+            <key code="2" output="Ɗ"/>          <!-- Option+Shift+d = Ɗ -->
+            <key code="3" output="F́"/>          <!-- Option+Shift+f = F́ -->
+            <key code="4" output="H"/>
+            <key code="5" output="Ɣ"/>          <!-- Option+Shift+g = Ɣ -->
+            <key code="6" output="Ỹ"/>          <!-- Option+Shift+y = Ỹ -->
+            <key code="7" output="X"/>
+            <key code="8" output="C"/>
+            <key code="9" output="V"/>
+            <key code="10" output="°"/>
+            <key code="11" output="Ɓ"/>         <!-- Option+Shift+b = Ɓ -->
+            <key code="12" output="Q"/>
+            <key code="13" output="W̃"/>         <!-- Option+Shift+w = W̃ -->
+            <key code="14" output="Ɛ"/>         <!-- Option+Shift+e = Ɛ -->
+            <key code="15" output="R"/>
+            <key code="16" output="Z"/>
+            <key code="17" output="T"/>
             <key code="18" output="!"/>
-            <key code="19" output="&#x0022;"/>
-            <key code="20" output="§"/>
+            <key code="19" output="@"/>
+            <key code="20" output="#"/>
             <key code="21" output="$"/>
+            <key code="22" output="&amp;"/>
             <key code="23" output="%"/>
-            <key code="22" output="&#x0026;"/>
+            <key code="24" output="+"/>
+            <key code="25" output="("/>
             <key code="26" output="/"/>
-            <key code="28" output="("/>
-            <key code="25" output=")"/>
-            <key code="29" output="="/>
-            <key code="27" output="?"/>
-            <key code="24" output="`"/>
-            
-            <key code="12" output="q"/>
-            <key code="13" output="w"/>
-            <key code="14" output="e"/>
-            <key code="15" output="r"/>
-            <key code="17" output="t"/>
-            <key code="16" output="z"/>     <!-- z lowercase with Caps+Shift -->
-            <key code="32" output="u"/>
-            <key code="34" output="i"/>
-            <key code="31" output="o"/>
-            <key code="35" output="p"/>
-            <key code="33" output="Ü"/>
-            <key code="30" output="*"/>
-            
-            <key code="0" output="a"/>
-            <key code="1" output="s"/>
-            <key code="2" output="d"/>
-            <key code="3" output="f"/>
-            <key code="5" output="g"/>
-            <key code="4" output="h"/>
-            <key code="38" output="j"/>
-            <key code="40" output="k"/>
-            <key code="37" output="l"/>
-            <key code="41" output="Ö"/>
-            <key code="39" output="Ä"/>
-            <key code="42" output="'"/>
-            
-            <key code="10" output=">"/>
-            <key code="6" output="y"/>      <!-- y lowercase with Caps+Shift -->
-            <key code="7" output="x"/>
-            <key code="8" output="c"/>
-            <key code="9" output="v"/>
-            <key code="11" output="b"/>
-            <key code="45" output="n"/>
-            <key code="46" output="m"/>
-            <key code="43" output=";"/>
-            <key code="47" output=":"/>
-            <key code="44" output="_"/>
-            
-            <key code="49" output=" "/>
+            <key code="27" output="_"/>
+            <key code="28" output="*"/>
+            <key code="29" output=")"/>
+            <key code="30" output="}"/>
+            <key code="31" output="Ɔ"/>         <!-- Option+Shift+o = Ɔ -->
+            <key code="32" output="Ũ"/>         <!-- Option+Shift+u = Ũ -->
+            <key code="33" output="{"/>
+            <key code="34" output="Ĩ"/>         <!-- Option+Shift+i = Ĩ -->
+            <key code="35" output="P"/>
             <key code="36" output="&#x000D;"/>
+            <key code="37" output="L"/>
+            <key code="38" output="J"/>
+            <key code="39" output="ʼ"/>         <!-- Option+Shift+' = ʼ (même apostrophe) -->
+            <key code="40" output="K"/>
+            <key code="41" output=":"/>
+            <key code="42" output="|"/>
+            <key code="43" output="&lt;"/>
+            <key code="44" output="?"/>
+            <key code="45" output="Ɲ"/>         <!-- Option+Shift+n = Ɲ -->
+            <key code="46" output="M̃"/>         <!-- Option+Shift+m = M̃ -->
+            <key code="47" output="&gt;"/>
             <key code="48" output="&#x0009;"/>
+            <key code="49" output=" "/>
+            <key code="50" output="Ŋ"/>         <!-- Option+Shift+` = Ŋ -->
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
         </keyMap>
-    </keyMapSet>
-    
-    <!-- Configuration pour les claviers JIS (optionnel) -->
-    <keyMapSet id="JIS">
-        <keyMap index="0" baseMapSet="ANSI" baseIndex="0"/>
-        <keyMap index="1" baseMapSet="ANSI" baseIndex="1"/>
-        <keyMap index="2" baseMapSet="ANSI" baseIndex="2"/>
-        <keyMap index="3" baseMapSet="ANSI" baseIndex="3"/>
-        <keyMap index="4" baseMapSet="ANSI" baseIndex="4"/>
-        <keyMap index="5" baseMapSet="ANSI" baseIndex="5"/>
+        
+        <!-- Caps Lock layer -->
+        <keyMap index="4">
+            <key code="0" output="A"/>
+            <key code="1" output="S"/>
+            <key code="2" output="D"/>
+            <key code="3" output="F"/>
+            <key code="4" output="H"/>
+            <key code="5" output="G"/>
+            <key code="6" output="Y"/>
+            <key code="7" output="X"/>
+            <key code="8" output="C"/>
+            <key code="9" output="V"/>
+            <key code="10" output="^"/>
+            <key code="11" output="B"/>
+            <key code="12" output="Q"/>
+            <key code="13" output="W"/>
+            <key code="14" output="E"/>
+            <key code="15" output="R"/>
+            <key code="16" output="Z"/>
+            <key code="17" output="T"/>
+            <key code="18" output="1"/>
+            <key code="19" output="2"/>
+            <key code="20" output="3"/>
+            <key code="21" output="4"/>
+            <key code="22" output="6"/>
+            <key code="23" output="5"/>
+            <key code="24" output="="/>
+            <key code="25" output="9"/>
+            <key code="26" output="7"/>
+            <key code="27" output="-"/>
+            <key code="28" output="8"/>
+            <key code="29" output="0"/>
+            <key code="30" output="]"/>
+            <key code="31" output="O"/>
+            <key code="32" output="U"/>
+            <key code="33" output="["/>
+            <key code="34" output="I"/>
+            <key code="35" output="P"/>
+            <key code="36" output="&#x000D;"/>
+            <key code="37" output="L"/>
+            <key code="38" output="J"/>
+            <key code="39" output="'"/>
+            <key code="40" output="K"/>
+            <key code="41" output=";"/>
+            <key code="42" output="\"/>
+            <key code="43" output=","/>
+            <key code="44" output="/"/>
+            <key code="45" output="N"/>
+            <key code="46" output="M"/>
+            <key code="47" output="."/>
+            <key code="48" output="&#x0009;"/>
+            <key code="49" output=" "/>
+            <key code="50" output="`"/>
+            <key code="51" output="&#x0008;"/>
+            <key code="53" output="&#x001B;"/>
+        </keyMap>
     </keyMapSet>
 </keyboard>
