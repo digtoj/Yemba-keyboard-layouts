@@ -26,16 +26,20 @@ Le layout inclut tous les caractères spéciaux du Yemba :
 ### Versions majuscules
 Toutes les lettres spéciales ont leurs équivalents en majuscules.
 
-## 🖥️ Plateformes supportées
+## 🖥️ Plateformes et layouts supportés
 
 ### macOS
-- **Fichier** : `systems/macos/de/Yemba.keylayout`
+- **Layouts disponibles**:
+  - **QWERTY US**: `systems/macos/de/Yemba.keylayout`
+  - **QWERTZ Allemand**: En développement
 - **Installation** : Via Ukelele (recommandé) ou installation manuelle
 - **Modificateur** : Touche Option (⌥)
 
 ### Windows  
-- **Fichier** : `systems/windows/Yemba.klc`
-- **Installation** : Via Microsoft Keyboard Layout Creator (MSKLC)
+- **Layouts disponibles**:
+  - **QWERTZ Allemand**: `windows/qwertz-german/Yemba.klc`
+  - Autres layouts en développement
+- **Installation** : Via le script d'installation ou Microsoft Keyboard Layout Creator (MSKLC)
 - **Modificateur** : Touche AltGr (Alt droite)
 
 ## 🚀 Installation rapide
@@ -46,43 +50,65 @@ Toutes les lettres spéciales ont leurs équivalents en majuscules.
 3. File → Install → Install for Current User
 4. Activez dans Préférences Système → Clavier → Sources d'entrée
 
-### Windows
-1. Installez Microsoft Keyboard Layout Creator
-2. Exécutez `systems/windows/install.bat` en tant qu'administrateur
+### Windows (QWERTZ Allemand)
+1. Allez dans le dossier `windows/qwertz-german`
+2. Exécutez `install.bat` en tant qu'administrateur
 3. Redémarrez votre session
-4. Activez dans Paramètres → Langue
+4. Activez dans Paramètres → Langue → Options de langue → Ajouter un clavier
 
 ## 📚 Documentation détaillée
 
-- **[Guide macOS](systems/macos/README.md)** - Instructions complètes pour macOS avec Ukelele
-- **[Guide Windows](systems/windows/README.md)** - Instructions complètes pour Windows
+- **[Guide macOS](systems/macos/de/README.md)** - Instructions pour macOS avec Ukelele
+- **[Guide Windows QWERTZ Allemand](windows/qwertz-german/README.md)** - Instructions pour Windows
 - **[Page web du projet](index.html)** - Interface web avec guide d'utilisation
 
 ## 🎹 Guide d'utilisation
 
-### Exemples de saisie
-
-**macOS (Option + touche) | Windows (AltGr + touche) :**
+### Exemples de saisie pour QWERTZ Allemand (Windows)
 
 ```
-Option/AltGr + 1 = ɛ     Option/AltGr + 6 = ɔ
-Option/AltGr + 2 = ɛ̀     Option/AltGr + 7 = ɔ̀  
-Option/AltGr + 3 = ɛ́     Option/AltGr + 8 = ɔ́
-Option/AltGr + Q = ʉ     Option/AltGr + S = ə
-Option/AltGr + N = ɲ     Option/AltGr + M = ŋ
+AltGr + 1 = ɛ        AltGr + 6 = ɔ
+AltGr + 2 = ɛ́        AltGr + 7 = ɔ́  
+AltGr + 3 = ɛ̀        AltGr + 8 = ɔ̀
+AltGr + 4 = ɛ̂        AltGr + 9 = ɔ̂
+AltGr + 5 = ɛ̄        AltGr + 0 = ɔ̄
+
+AltGr + q = ʉ        AltGr + z = ə
+AltGr + w = ʉ́        AltGr + u = ɨ
+AltGr + e = ʉ̀        
+AltGr + r = ʉ̂        
+AltGr + t = ʉ̄        
+
+AltGr + n = ɲ        AltGr + m = ŋ
 ```
 
-**Pour les majuscules :** Option/AltGr + Shift + touche
+**Pour les majuscules :** AltGr + Shift + touche
 
-## 🌐 Utilisation en ligne
+## 🌐 Structure du projet
 
-Vous pouvez également consulter la page web du projet en ouvrant `index.html` dans votre navigateur pour une présentation interactive du projet avec tous les guides d'installation.
+```
+Yemba-keyboard-layouts/
+├── systems/
+│   ├── macos/
+│   │   ├── de/  (Clavier macOS)
+│   │   │   ├── Yemba.keylayout
+│   │   │   └── README.md
+│   └── windows/ (Anciens fichiers Windows)
+├── windows/
+│   ├── qwertz-german/
+│   │   ├── Yemba.klc
+│   │   ├── install.bat
+│   │   ├── YembaKeyboard.reg
+│   │   ├── README.md
+│   │   └── DEVELOPMENT.md
+└── README.md (ce fichier)
+```
 
 ## 📥 Téléchargements
 
 - **[Layout macOS](systems/macos/de/Yemba.keylayout)** - Fichier .keylayout pour macOS
-- **[Layout Windows](systems/windows/Yemba.klc)** - Fichier .klc pour Windows
-- **[Script d'installation Windows](systems/windows/install.bat)** - Installation automatique
+- **[Layout Windows QWERTZ Allemand](windows/qwertz-german/Yemba.klc)** - Fichier .klc pour Windows
+- **[Script d'installation Windows](windows/qwertz-german/install.bat)** - Installation automatique
 
 ## 🤝 Contribution
 
@@ -90,7 +116,7 @@ Ce projet est ouvert aux contributions ! Vous pouvez :
 
 - Signaler des bugs ou problèmes
 - Proposer des améliorations
-- Ajouter le support pour d'autres plateformes
+- Ajouter le support pour d'autres layouts (AZERTY, QWERTY, etc.)
 - Améliorer la documentation
 
 ### Comment contribuer
